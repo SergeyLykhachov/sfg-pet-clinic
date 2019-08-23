@@ -39,7 +39,6 @@
                 <configuration>
                     <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
-                        <checkModificationExclude>**</checkModificationExclude>
                     </checkModificationExcludes>
                     <goals>install</goals>
                     <autoVersionSubmodules>true</autoVersionSubmodules>

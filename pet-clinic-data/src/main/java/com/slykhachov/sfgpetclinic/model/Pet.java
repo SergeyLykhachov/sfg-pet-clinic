@@ -4,6 +4,8 @@ import java.time.LocalDate;
 
 public class Pet {
     private PetType petType;
+    private Owner owner;
+    private LocalDate birthDaate;
 
     public PetType getPetType() {
         return petType;
@@ -28,7 +30,4 @@ public class Pet {
     public void setBirthDaate(LocalDate birthDaate) {
         this.birthDaate = birthDaate;
     }
-
-    private Owner owner;
-    private LocalDate birthDaate;
 }
