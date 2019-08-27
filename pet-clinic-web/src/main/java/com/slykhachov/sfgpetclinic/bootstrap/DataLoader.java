@@ -4,12 +4,8 @@ import com.slykhachov.sfgpetclinic.model.Owner;
 import com.slykhachov.sfgpetclinic.model.Vet;
 import com.slykhachov.sfgpetclinic.services.OwnerService;
 import com.slykhachov.sfgpetclinic.services.VetService;
-import com.slykhachov.sfgpetclinic.services.map.OwnerServiceMap;
-import com.slykhachov.sfgpetclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.util.Set;
 
 @Component
 public class DataLoader implements CommandLineRunner {
