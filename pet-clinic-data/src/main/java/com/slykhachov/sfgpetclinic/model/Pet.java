@@ -3,9 +3,19 @@ package com.slykhachov.sfgpetclinic.model;
 import java.time.LocalDate;
 
 public class Pet extends BaseEntity {
+
     private PetType petType;
     private Owner owner;
-    private LocalDate birthDaate;
+    private LocalDate birthDate;
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public PetType getPetType() {
         return petType;
@@ -23,11 +33,12 @@ public class Pet extends BaseEntity {
         this.owner = owner;
     }
 
-    public LocalDate getBirthDaate() {
-        return birthDaate;
+    public LocalDate getBirthDate() {
+        return birthDate;
     }
 
-    public void setBirthDaate(LocalDate birthDaate) {
-        this.birthDaate = birthDaate;
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
     }
+
 }
