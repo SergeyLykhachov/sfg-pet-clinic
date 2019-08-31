@@ -2,7 +2,6 @@ package com.slykhachov.sfgpetclinic.services.map;
 
 import com.slykhachov.sfgpetclinic.model.Owner;
 import com.slykhachov.sfgpetclinic.model.Pet;
-import com.slykhachov.sfgpetclinic.model.PetType;
 import com.slykhachov.sfgpetclinic.services.OwnerService;
 import com.slykhachov.sfgpetclinic.services.PetService;
 import org.springframework.stereotype.Service;
@@ -27,7 +26,7 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 
     @Override
     public Owner findById(Long id) {
-        return super.finfById(id);
+        return super.findById(id);
     }
 
     @Override
