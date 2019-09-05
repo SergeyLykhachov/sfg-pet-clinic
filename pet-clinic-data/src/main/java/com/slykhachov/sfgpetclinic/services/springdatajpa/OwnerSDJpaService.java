@@ -27,7 +27,7 @@ public class OwnerSDJpaService implements OwnerService {
     }
 
     @Override
-    public Owner findByLastNeme(String lastName) {
+    public Owner findByLastName(String lastName) {
         return ownerRepository.findByLastName(lastName);
     }
 
@@ -45,12 +45,6 @@ public class OwnerSDJpaService implements OwnerService {
 
     @Override
     public Owner save(Owner obj) {
-        System.out.println("##################################################");
-        System.out.println("##################################################");
-        System.out.println("##################################################");
-        System.out.println("##################################################");
-        System.out.println("##################################################");
-        System.out.println("##################################################");
         return ownerRepository.save(obj);
     }
 
