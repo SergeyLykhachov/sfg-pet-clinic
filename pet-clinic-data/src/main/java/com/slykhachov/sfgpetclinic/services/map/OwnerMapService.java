@@ -69,7 +69,7 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
     public Owner findByLastName(String lastName) {
         return this.findAll()
                 .stream()
-                .filter(owner -> owner.getLastName().equalsIgnoreCase(lastName))
+                .filter(owner -> lastName.equalsIgnoreCase(owner.getLastName()))
                 .findAny()
                 .orElse(null);
     }
