@@ -62,4 +62,6 @@ class OwnerControllerTest {
 
         verifyZeroInteractions(ownerService);
     }
+    @Test
+    void test() {}
 }
