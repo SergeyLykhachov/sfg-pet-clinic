@@ -4,6 +4,7 @@ import com.slykhachov.sfgpetclinic.model.Owner;
 import com.slykhachov.sfgpetclinic.model.Pet;
 import com.slykhachov.sfgpetclinic.model.PetType;
 import com.slykhachov.sfgpetclinic.services.PetService;
+import com.slykhachov.sfgpetclinic.services.VisitService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -36,6 +37,9 @@ class VisitControllerTest {
 
     @Mock
     PetService petService;
+
+    @Mock
+    VisitService visitService;
 
     @InjectMocks
     VisitController visitController;
