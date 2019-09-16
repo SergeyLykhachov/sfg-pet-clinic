@@ -23,9 +23,9 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
     T save(T obj) {
        if (obj != null) {
            if (obj.getId() == null) {
-                obj.setId(getNextID());
+                obj.setId(getNextId());
            }
-           map.put(getNextID(), obj);
+           map.put(obj.getId(), obj);
        } else {
             throw new RuntimeException("Objects can not be null");
        }
@@ -40,7 +40,7 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
         map.entrySet().removeIf(entry -> entry.getValue().equals(obj));
     }
 
-    private long getNextID() {
+    private long getNextId() {
         long id;
         try {
             id = Collections.max(map.keySet()) + 1;
@@ -49,4 +49,6 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
         }
         return id;
     }
+
 }
+
